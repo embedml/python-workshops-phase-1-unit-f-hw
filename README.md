@@ -1,5 +1,5 @@
-# python-workshops-phase-1-unit-c-hw
-Practice Problems for Unit 1C of Python Workshops
+# python-workshops-phase-1-unit-f-hw
+Practice Problems for Unit 1F of Python Workshops
 
 # Getting Started
 Passing all test cases is required for you to finish this workshop.
@@ -26,7 +26,7 @@ We will be using Github Classroom to make grading easier. This will let you auto
 
 # What will be graded?
 
-In this unit, file `unit_1c_hw.py` will be graded. That is the file you will want to modify. You can see how it will be graded in the `test_unit_1c_hw.py` file. The goal is to pass all tests in the `test_unit_1c_hw.py` file. 
+In this unit, file `unit_1f_hw.py` will be graded. That is the file you will want to modify. You can see how it will be graded in the `test_unit_1f_hw.py` file. The goal is to pass all tests in the `test_unit_1f_hw.py` file. 
 <br><br>
 Lets start by passing one test, seeing if we passed it locally, then uploading it to Github Classroom to get your grade. 
 <br><br>
