@@ -36,7 +36,6 @@ prevent you from completing the assignment
 
 '''
 import random
-import math
 from unit_1f_hw import *
 
 def test_car_class():
@@ -63,9 +62,9 @@ def test_math_operations_class():
     assert math_operations.slope_intercept(m=m, x=a, b=b) == m*a+b, f"Math_Operations: expected your slope_intercept function to return {m*a+b} but it returned {math_operations.slope_intercept(m=m, x=a, b=b)}"
     assert math_operations.pythagorean(a=a, b=b) == (a**2+b**2)**0.5, f"Math_Operations: expected your pythagorean function to return {(a**2+b**2)**0.5} but it returned {math_operations.pythagorean(a=a, b=b)}"
 
-def test_getting_distances():
+def test_getting_pythags():
     pythags = getting_pythags()
-    solutions = [1**(-2), 8**(-2), 10**(-2), 212**(-2), 101**(-2), 9**(-2), 5**(-2), 50**(-2), 5**(-2)]
+    solutions = [1**(0.5), 8**(0.5), 10**(0.5), 212**(0.5), 101**(0.5), 9**(0.5), 5**(0.5), 50**(0.5), 5**(0.5)]
     for index, value in enumerate(pythags):
         sol = round(solutions[index], 3)
         assert round(value, 3) == sol, f"Failed for values on index: {index}"
