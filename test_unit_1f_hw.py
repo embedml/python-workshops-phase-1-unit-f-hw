@@ -65,7 +65,7 @@ def test_math_operations_class():
 
 def test_getting_distances():
     pythags = getting_pythags()
-    solutions = [1, 8**(-2), 10**(-2), 212**(-2), 101**(-2), 9**(-2), 5**(-2), 25**(-2), 3**(-2)]
+    solutions = [1**(-2), 8**(-2), 10**(-2), 212**(-2), 101**(-2), 9**(-2), 5**(-2), 50**(-2), 5**(-2)]
     for index, value in enumerate(pythags):
-        assert round(value, 3) == round(solutions[index], 3)
-    
+        sol = round(solutions[index], 3)
+        assert round(value, 3) == sol, f"Failed for values on index: {index}"

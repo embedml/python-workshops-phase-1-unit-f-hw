@@ -93,8 +93,6 @@ def getting_pythags():
     #### Put your code below #####
 
 
-
-
     ###############################
 
 
