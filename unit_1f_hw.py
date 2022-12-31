@@ -139,7 +139,8 @@ Hint: Use the "add_car" method in the garage object.
 Print the output of the `add_car` method each time you use it. 
 
 
-Then return the list of cars you added to the garage. 
+Then return the list of cars you added to the garage, as well as the garage object. 
+The list should be the first thing returned and the garage object the second
 Print the list of cars before returning it in the function.
 
 '''

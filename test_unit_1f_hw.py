@@ -68,3 +68,39 @@ def test_getting_pythags():
     for index, value in enumerate(pythags):
         sol = round(solutions[index], 3)
         assert round(value, 3) == sol, f"Failed for values on index: {index}"
+
+def test_garage_class():
+
+    t_g = Garage(num_spots=3)
+    assert t_g.num_spots == 3, "Assigned num_spots to 3 but was not 3"
+    assert type(t_g.cars) == list, "cars attribute was not a list"
+    assert len(t_g.cars) == 0, "cars list did not start empty"
+    t_c_1 = Car(car_name="Car 1", miles_per_gallon=10)
+    t_c_2 = Car(car_name="Car 2", miles_per_gallon=11)
+    t_c_3 = Car(car_name="Car 3", miles_per_gallon=12)
+    t_c_4 = Car(car_name="Car 4", miles_per_gallon=13)
+    assert t_g.add_car(t_c_1) == True, "Adding a car when there was space did not return True"
+    assert t_g.num_spots == 2, "Added a car but num_spots did not decrease"
+    assert t_g.show_cars() == [t_c_1], "Added a car but did not show correctly"
+
+    assert t_g.add_car(t_c_2) == True, "Adding a car when there was space did not return True"
+    assert t_g.num_spots == 1, "Added 2 cars but num_spots was not 1"
+    assert t_g.show_cars() == [t_c_1, t_c_2,], "List of cars is not correct"
+
+    assert t_g.add_car(t_c_3) == True, "Adding a car when there was space did not return True"
+    assert t_g.num_spots == 0, "Added 3 cars but num_spots was not 0"
+    assert t_g.show_cars() == [t_c_1, t_c_2, t_c_3,], "List of cars is not correct"
+
+    assert t_g.add_car(t_c_4) == False, "Adding a car when there was no space did not return False"
+    assert t_g.num_spots == 0, "Tried and failed to add a 4th car but num_spots was not 0"
+    assert t_g.show_cars() == [t_c_1, t_c_2, t_c_3,], "List of cars is not correct"
+
+def test_garage_problem():
+    c_l, g_o = garage_problem()
+    assert c_l == g_o.show_cars()
+    assert g_o.num_spots == 0
+    names = ["Toyota Tacoma", "Nissan Altima", "Volkswagon Beetle", "Ferrari Enzo"]
+    mpgs = [13, 22, 23, 7]
+    for i in range(len(names)):
+        assert c_l[i].name == names[i]
+        assert c_l[i].mpg == mpgs[i]
