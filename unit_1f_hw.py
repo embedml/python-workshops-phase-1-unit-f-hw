@@ -120,6 +120,9 @@ of cars that are currently in the garage.
 
 '''
 
+
+#################################
+
 #### Solve the problem below ####
 
 '''
@@ -149,13 +152,7 @@ def garage_problem():
     #### Put your code below ####
 
 
-
-
-
-
-
     #############################
-    pass
 
 
 ############################

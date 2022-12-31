@@ -99,8 +99,8 @@ def test_garage_problem():
     c_l, g_o = garage_problem()
     assert c_l == g_o.show_cars()
     assert g_o.num_spots == 0
-    names = ["Toyota Tacoma", "Nissan Altima", "Volkswagon Beetle", "Ferrari Enzo"]
-    mpgs = [13, 22, 23, 7]
+    names = ["Toyota Tacoma", "Nissan Altima", "Volkswagon Beetle"]
+    mpgs = [13, 22, 23]
     for i in range(len(names)):
         assert c_l[i].name == names[i]
         assert c_l[i].mpg == mpgs[i]
