@@ -150,7 +150,7 @@ Print the list of cars before returning it in the function.
 
 def garage_problem():
     #### Put your code below ####
-
+    pass
 
     #############################
 
