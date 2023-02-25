@@ -82,7 +82,7 @@ Using a for loop and the Math_Operations class, iterate through
 the `a_list` and `b_list` performing the pythagorean theorem on each item 
 from each list respectively. `a_list` items should go into the `a` parameter and 
 `b_list` items should go into the `b` parameter. Append each result into 
-the `distances` list. 
+the `pythags` list. 
 
 At the end return the `pythags` list.
 
